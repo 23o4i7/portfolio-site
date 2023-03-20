@@ -11,7 +11,7 @@ export default function HeroText({ text, color, size, decoration }: HeroTextProp
     return (
         <div className="flex flex-col items-center justify-center">
             <span className="flex flex-row font-bold text-center">
-                <h1 className={twMerge("block", `text-${size || "8xl"}`, `text-${color || "white"}`)}>{text}</h1>
+                <h1 className={twMerge("block", `text-8xl`, `text-${color || "white"}`)}>{text}</h1>
             </span>
         </div>
     )

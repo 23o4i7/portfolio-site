@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import Navbar from "@/molecules/Navbar";
-
 import HeroText from "@/atoms/HeroText";
+import TitleText from "@/atoms/TitleText";
+import Navbar from "@/molecules/Navbar";
 
 export default function Index() {
   return (
@@ -16,9 +16,11 @@ export default function Index() {
       <Navbar />
       <main className="min-h-screen bg-gunmetal">
         <div className="flex flex-col items-center justify-center py-24 xl:py-40">
-          <HeroText text={"Hello World!"} />
+          <HeroText text={"Sean Ng"} />
+          <HeroText text={"Full Stack Developer"} />
         </div>
         <div className="flex flex-col items-center justify-center">
+          <TitleText text={"Projects"} />
           <Link className="text-white" href="/buddytree">Buddytree</Link>
           <Link className="text-white" href="/igaq">IGAQ</Link>
           <Link className="text-white" href="/wordgotchu">WordGotchu</Link>
