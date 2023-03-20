@@ -16,7 +16,7 @@ export default function Index() {
       <Navbar />
       <main className="min-h-screen bg-gunmetal">
         <div className="flex flex-col items-center justify-center py-24 xl:py-40">
-          <HeroText text={"Hello World!"} size={"8xl"} />
+          <HeroText text={"Hello World!"} />
         </div>
         <div className="flex flex-col items-center justify-center">
           <Link className="text-white" href="/buddytree">Buddytree</Link>

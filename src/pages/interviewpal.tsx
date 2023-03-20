@@ -11,7 +11,7 @@ import { twMerge } from "tailwind-merge"
 
 export default function ProjectPage() {
   const router = useRouter();
-  const description = "IGAQ is a web application that allows users to create and join groups based on their interests. Users can post content, interact with other users, and create events."
+  const description = "InterviewPal is a GPT-3.5 powered AI that helps you practice for your interviews. It will ask you common and relevant interview questions and give you insightful feedback on your answers."
 
   return (
     <>
@@ -24,16 +24,16 @@ export default function ProjectPage() {
       <Navbar />
       <main className="min-h-screen bg-gunmetal">
         <div className="flex flex-col px-24">
-          <div className="grid grid-cols-2 mt-28 pt-12 -mx-2 md:px-12 text-left">
+        <div className="grid grid-cols-2 mt-28 pt-12 -mx-2 md:px-12 text-left">
             <div className="">
-              <TitleText text={"IGAQ"} />
+              <TitleText text={"InterviewPal"} />
               <div className="align-center py-8 px-12">
-                <DescriptionBox description={description} tags={["React", "Next.js", "JavaScript", "TypeScript", "NestJS", "Neo4j", "Vercel"]} />
+                <DescriptionBox description={description} tags={["React", "Next.js", "Typescript", "Tailwind", "Redis", "OpenAI", "Vercel"]} />
               </div>
             </div>
             <div className="relative">
-              <Image src="/images/igaq.png" alt="Buddytree Homepage" width={1000} height={1000} className={"object-scale-down"} />
-            </div>
+                <Image src="/images/interviewPal.png" alt="Buddytree Homepage" width={1000} height={1000} className={"object-scale-down"} />
+              </div>
           </div>
         </div>
       </main>

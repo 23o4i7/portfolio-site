@@ -11,7 +11,7 @@ import { twMerge } from "tailwind-merge"
 
 export default function ProjectPage() {
   const router = useRouter();
-  const description = "IGAQ is a web application that allows users to create and join groups based on their interests. Users can post content, interact with other users, and create events."
+  const description = "Wordgotchu is a pixel styled web platform game based on Wordle and original characters known as 'Gotchus' that battle against each other in an arena."
 
   return (
     <>
@@ -24,16 +24,16 @@ export default function ProjectPage() {
       <Navbar />
       <main className="min-h-screen bg-gunmetal">
         <div className="flex flex-col px-24">
-          <div className="grid grid-cols-2 mt-28 pt-12 -mx-2 md:px-12 text-left">
+        <div className="grid grid-cols-2 mt-28 pt-12 -mx-2 md:px-12 text-left">
             <div className="">
-              <TitleText text={"IGAQ"} />
+              <TitleText text={"WordGotchu"} />
               <div className="align-center py-8 px-12">
-                <DescriptionBox description={description} tags={["React", "Next.js", "JavaScript", "TypeScript", "NestJS", "Neo4j", "Vercel"]} />
+                <DescriptionBox description={description} tags={["JavaScript", "HTML", "CSS", "Firebase", "Heroku"]} />
               </div>
             </div>
             <div className="relative">
-              <Image src="/images/igaq.png" alt="Buddytree Homepage" width={1000} height={1000} className={"object-scale-down"} />
-            </div>
+                <Image src="/images/wordgotchu.png" alt="Buddytree Homepage" width={1000} height={1000} className={"object-scale-down"} />
+              </div>
           </div>
         </div>
       </main>

@@ -10,11 +10,11 @@ type DescriptionBoxProps = {
 
 export default function DescriptionBox({ description, tags, title, color, size }: DescriptionBoxProps) {
   return (
-    <div className="flex flex-col bg-slate-200 px-8 py-6 rounded-xl">
+    <div className="flex flex-col bg-pale-blue px-8 py-6 rounded-xl">
       <span className="text-black">{description}</span>
       <div className="flex flex-row">
         {tags.map((tag) => 
-          <Tag text={tag} color={color} />
+          <Tag key={tag} iconName={tag} />
         )}
       </div>
 
