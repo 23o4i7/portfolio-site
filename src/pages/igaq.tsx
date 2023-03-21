@@ -11,8 +11,8 @@ import { twMerge } from "tailwind-merge"
 
 export default function ProjectPage() {
   const router = useRouter();
-  const description = "IGAQ is a web application that allows users to create and join groups based on their interests. Users can post content, interact with other users, and create events."
-
+  const description = "I Got A Queery (IGAQ) provides a safe space for the members of the LGBTQ+ community to ask questions, share stories, and read resources about all things LGBTQ+.";
+  
   return (
     <>
       <Head>
@@ -22,17 +22,19 @@ export default function ProjectPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="min-h-screen bg-gunmetal">
+      <main className="min-h-screen bg-slate-black">
         <div className="flex flex-col px-24">
-          <div className="grid grid-cols-2 mt-28 pt-12 -mx-2 md:px-12 text-left">
-            <div className="">
+          <div className="grid grid-cols-2 mt-28 pt-12 mx-6 md:px-12 text-left">
+            <div className="px-4">
               <TitleText text={"IGAQ"} />
-              <div className="align-center py-8 px-12">
+              <div className="align-center py-8 px-20">
                 <DescriptionBox description={description} tags={["React", "Next.js", "JavaScript", "TypeScript", "NestJS", "Neo4j", "Vercel"]} />
               </div>
             </div>
-            <div className="relative">
-              <Image src="/images/igaq.png" alt="Buddytree Homepage" width={1000} height={1000} className={"object-scale-down"} />
+            <div className="">
+              <div className="relative">
+                <Image src="/images/igaq.png" alt="Buddytree Homepage" width={1000} height={1000} className={"object-scale-down"} />
+              </div>
             </div>
           </div>
         </div>

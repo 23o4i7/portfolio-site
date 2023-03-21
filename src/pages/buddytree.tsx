@@ -22,7 +22,7 @@ export default function ProjectPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="min-h-screen bg-gunmetal">
+      <main className="min-h-screen bg-slate-black">
         <div className="flex flex-col px-24">
           <div className="grid grid-cols-2 mt-28 pt-12 mx-6 md:px-12 text-left border">
             <div className="border px-4">

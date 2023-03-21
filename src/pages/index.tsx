@@ -14,7 +14,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="min-h-screen bg-gunmetal">
+      <main className="min-h-screen bg-slate-black">
         <div className="flex flex-col items-center justify-center py-24 xl:py-40">
           <HeroText text={"Sean Ng"} />
           <HeroText text={"Full Stack Developer"} />
