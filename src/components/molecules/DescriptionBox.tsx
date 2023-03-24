@@ -1,4 +1,5 @@
 import Tag from "@/atoms/Tag";
+import SVGBox from "@/molecules/SVGBox";
 
 type DescriptionBoxProps = {
   description: string;
@@ -11,7 +12,7 @@ type DescriptionBoxProps = {
 export default function DescriptionBox({ description, tags, title, color, size }: DescriptionBoxProps) {
   return (
     <div className="flex flex-col bg-pale-blue px-8 py-6 rounded-xl">
-      <span className="text-black">{description}</span>
+      <span className="text-black text-lg">{description}</span>
       <div className="flex flex-row">
         {tags.map((tag) => 
           <Tag key={tag} iconName={tag} />
