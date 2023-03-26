@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 import HeroText from "@/atoms/HeroText";
+import HomepageText from "@/atoms/HomepageText";
 import TitleText from "@/atoms/TitleText";
 import Navbar from "@/molecules/Navbar";
 import Artifact from "@/organisms/Artifact";
+import ContactBox from "@/organisms/ContactBox";
 
 export default function Index() {
 
@@ -11,7 +13,7 @@ export default function Index() {
     {
       name: "Buddytree",
       description: "Buddytree is a social media platform that allows users to meet trusted individuals and discover new friends. Users can create and join groups, post content, and create hangouts for other users to attend.",
-      tags: ["React", "Next.js", "TypeScript", "Flask", "Python", "PostgresQL", "Heroku"],
+      tags: ["React", "Next.js", "TypeScript", "SASS", "Flask", "Python", "PostgresQL", "Heroku"],
       links: ["", "https://www.buddytree.org/"]
     },
     {
@@ -44,18 +46,20 @@ export default function Index() {
       </Head>
       <Navbar />
       <main className="min-h-screen bg-slate-black">
-        <div className="flex flex-col items-center justify-center py-24 xl:py-40">
+        <div id="about" className="flex flex-col items-center justify-center py-24 xl:py-40">
           <HeroText text={"Sean Ng"} />
           <HeroText text={"Full Stack Developer"} />
+          <HomepageText text={"I'm a full stack developer with a passion for building web applications."} />
         </div>
-        <div className="flex flex-col items-center justify-center">
+        <div id="projects" className="flex flex-col items-center justify-center mb-12">
           <TitleText text={"Projects"} />
           {projects.map((project) => (
             <Artifact key={project.name} artifactName={project.name} description={project.description} tags={project.tags} links={project.links} />
-          ))}
+            ))}
         </div>
-        <div className="">
+        <div id="contact" className="flex flex-col items-center justify-center">
           <TitleText text={"Contact"} />
+          <ContactBox />
         </div>
       </main>
     </>

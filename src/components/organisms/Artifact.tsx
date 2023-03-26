@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useRouter } from 'next/router';
 import TitleText from "@/atoms/TitleText";
 import Navbar from "@/molecules/Navbar";
-import LinkBox from "@/molecules/LinkBox";
 import DescriptionBox from "@/molecules/DescriptionBox";
 import SVGBox from "@/molecules/SVGBox";
 
