@@ -21,8 +21,8 @@ export default function ProjectPage({ artifactName, description, tags, links }: 
   return (
     <>
       <div className="flex flex-col px-32 py-16">
-        <div className="grid grid-cols-2 mx-6 md:px-12 text-left border">
-          <div className="border px-4 pt-6">
+        <div className="grid grid-cols-2 mx-6 md:mx-16 text-left border">
+          <div className="px-4 pt-6">
             <div className="flex flex-row justify-center">              
               <TitleText text={artifactName} decoration={"px-4"} />
               <SVGBox links={links}/>
@@ -31,7 +31,7 @@ export default function ProjectPage({ artifactName, description, tags, links }: 
               <DescriptionBox description={description} tags={tags} />
             </div>
           </div>
-          <div className="border">
+          <div className="">
             <div className="relative">
               <Image src={`/images/${artifactName.toLowerCase()}.png`} alt={`${artifactName} Homepage`} width={1000} height={1000} className={"object-scale-down"} />
             </div>
