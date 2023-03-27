@@ -46,7 +46,7 @@ export default function Index() {
       </Head>
       <Navbar />
       <main className="min-h-screen bg-slate-black">
-        <div id="about" className="flex flex-col items-center justify-center py-24 xl:py-40">
+        <div id="about" className="flex flex-col items-center justify-start px-12 py-24 xl:py-40">
           <HeroText text={"Sean Ng"} />
           <HeroText text={"Full Stack Developer"} />
           <HomepageText text={"I'm a full stack developer with a passion for building web applications."} />
