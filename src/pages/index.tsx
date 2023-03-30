@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import HeroText from "@/atoms/HeroText";
 import HomepageText from "@/atoms/HomepageText";
 import TitleText from "@/atoms/TitleText";
@@ -31,7 +30,7 @@ export default function Index() {
     {
       name: "WordGotchu",
       description: "Wordgotchu is a pixel styled web platform game based on Wordle and original characters known as 'Gotchus' that battle against each other in an arena.",
-      tags: ["JavaScript", "HTML", "CSS", "Firebase", "Heroku"],
+      tags: ["JavaScript", "HTML", "CSS", "Express.js","Firebase", "Heroku", "Vercel"],
       links: ["https://github.com/iantelli/word-gotchu", "https://word-gotchu.up.railway.app/"]
     },
   ]
@@ -46,19 +45,19 @@ export default function Index() {
       </Head>
       <Navbar />
       <main className="min-h-screen bg-slate-black">
-        <div id="about" className="flex flex-col items-center justify-start px-12 py-24 xl:py-40">
+        <div id="about" className="flex flex-col justify-start mx-auto px-24 py-24 xl:py-64 h-screen w-4/5">
           <HeroText text={"Sean Ng"} />
           <HeroText text={"Full Stack Developer"} />
           <HomepageText text={"I'm a full stack developer with a passion for building web applications."} />
         </div>
-        <div id="projects" className="flex flex-col items-center justify-center mb-12">
+        <div id="projects" className="flex flex-col items-center justify-center pt-36 mb-12">
           <TitleText text={"Projects"} />
           {projects.map((project) => (
             <Artifact key={project.name} artifactName={project.name} description={project.description} tags={project.tags} links={project.links} />
-            ))}
+            ))}          
         </div>
-        <div id="contact" className="flex flex-col items-center justify-center">
-          <TitleText text={"Contact"} />
+        <div id="contact" className="flex flex-col items-center justify-center h-screen">
+          <TitleText text={"Get in Touch"} />
           <ContactBox />
         </div>
       </main>

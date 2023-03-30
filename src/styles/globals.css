@@ -4,6 +4,11 @@
 
 @layer base {
   @import url("https://use.typekit.net/qbs6lbt.css");
+
+  html {
+    --scroll-behavior: smooth!important;
+    scroll-behavior: smooth!important;
+  }
 }
 
 @layer components {

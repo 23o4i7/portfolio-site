@@ -12,7 +12,7 @@ export default function ContactBox({ textDecoration }: ContactBoxProps) {
   return (
     <>
       <div className='py-16'>
-        <HomepageText text={"Get in touch"} />
+        {/* <HomepageText text={"Get in touch"} /> */}
         <div className='flex flex-row justify-center py-4'>
           <a className="px-2" href="mailto: sean.ng.cip@gmail.com" rel="noopener noreferrer" target="_blank">
             <Image src="/images/email.svg" alt="Email" width={45} height={45} />
