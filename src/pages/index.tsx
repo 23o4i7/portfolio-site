@@ -60,7 +60,7 @@ export default function Index() {
         </div>
         <div className="relative z-10">
           <div id="projects" className="flex flex-col items-center justify-center pt-36 mb-8 drop-shadow-lg">
-            <TitleText text={"My Projects"} spacing="pt-4" />
+            <TitleText text={"Projects I've Worked On"} spacing="p-8" />
             {projects.map((project) => (
               <Artifact key={project.name} artifactName={project.name} description={project.description} tags={project.tags} links={project.links} />
               ))}          
