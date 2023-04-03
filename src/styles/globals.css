@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @import url("https://use.typekit.net/qbs6lbt.css");
+@import url("https://use.typekit.net/qbs6lbt.css");
 
+@layer base {
   html {
     --scroll-behavior: smooth!important;
     scroll-behavior: smooth!important;

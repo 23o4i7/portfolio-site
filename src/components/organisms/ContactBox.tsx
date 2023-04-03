@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import TitleText from '@/atoms/TitleText';
+import ContactLinks from '@/molecules/ContactLinks';
+import HomepageText from '@/atoms/HomepageText';
+
 import { twMerge } from 'tailwind-merge';
-
-import HomepageText from '../atoms/HomepageText';
-
 
 type ContactBoxProps = {
   textDecoration?: string;
@@ -11,18 +11,14 @@ type ContactBoxProps = {
 export default function ContactBox({ textDecoration }: ContactBoxProps) {
   return (
     <>
-      <div className='py-16'>
-        {/* <HomepageText text={"Get in touch"} /> */}
-        <div className='flex flex-row justify-center py-4'>
-          <a className="px-2" href="mailto: sean.ng.cip@gmail.com" rel="noopener noreferrer" target="_blank">
-            <Image src="/images/email.svg" alt="Email" width={45} height={45} />
-          </a>
-          <a className="px-2" href="https://www.linkedin.com/in/sean-ng-23o4i7/" rel="noopener noreferrer" target="_blank">
-            <Image src="/images/linkedin.svg" alt="LinkedIn" width={45} height={45} />
-          </a>
-          <a className="px-2" href="https://github.com/23o4i7" rel="noopener noreferrer" target="_blank">
-            <Image src="/images/altgithub.svg" alt="Github" width={45} height={45} />
-          </a>
+      <div className='py-16 w-8/12 mx-auto'>
+        <div className='flex flex-col items-center text-center'>
+          <TitleText text={"Get In Touch"}/>
+          <HomepageText 
+            text={"I'm always interested in new opportunities and projects. If you have anything you'd like to discuss or just want to say hi, don't hesitate to send me a message anytime."} 
+            spacing='pt-20 pb-8' 
+          />
+          <ContactLinks />
         </div>
       </div>
     </>

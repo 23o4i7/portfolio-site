@@ -2,13 +2,13 @@ import { twMerge } from "tailwind-merge";
 
 type HomepageTextProps = {
   text: string;
-  decoration?: string;
+  spacing?: string;
 }
 
-export default function HomepageText({ text, decoration }: HomepageTextProps) {
+export default function HomepageText({ text, spacing }: HomepageTextProps) {
   return (
-    <div className={twMerge("flex flex-row text-white", decoration)}>
-      <h1 className="text-4xl font-bold text-center">{text}</h1>
+    <div className={twMerge("flex flex-row text-white", spacing)}>
+      <h1 className="text-3xl font-bold">{text}</h1>
     </div>
   )
 }

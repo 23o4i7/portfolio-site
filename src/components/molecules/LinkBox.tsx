@@ -11,7 +11,7 @@ export default function LinkBox({ links, decoration }: LinkBoxProps) {
       { 
         links[0] == "" ? null : 
         <a href={links[0]} rel="noopener noreferrer" target="_blank">
-          <div className="mr-2 bg-white rounded-full px-3 py-2">
+          <div className="mr-2 bg-black text-white rounded-full px-3 py-2">
             Visit Repository
           </div>
         </a> 
@@ -19,7 +19,7 @@ export default function LinkBox({ links, decoration }: LinkBoxProps) {
       { 
         links[1] == "" ? null :
         <a href={links[1]} rel="noopener noreferrer" target="_blank">
-          <div className="bg-white rounded-full px-3 py-2">
+          <div className="bg-black text-white rounded-full px-3 py-2">
             Visit Site
           </div>
         </a> 

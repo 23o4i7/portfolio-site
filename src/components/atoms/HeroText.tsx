@@ -5,13 +5,14 @@ type HeroTextProps = {
     color?: string
     size?: string
     decoration?: string
+    spacing?: string
 }
 
-export default function HeroText({ text, color, size, decoration }: HeroTextProps) {
+export default function HeroText({ text, color, size, decoration, spacing }: HeroTextProps) {
     return (
         <div className="">
-            <span className="flex flex-row font-bold">
-                <h1 className={twMerge("block", `text-8xl`, `text-${color || "white"}`)}>{text}</h1>
+            <span className={twMerge("flex flex-row font-bold", spacing)}>
+                <h1 className={twMerge("block", `text-7xl`, `text-${color || "white"}`)}>{text}</h1>
             </span>
         </div>
     )
