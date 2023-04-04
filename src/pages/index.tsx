@@ -45,7 +45,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/qbs6lbt.css"></link>
       </Head>
-      <main className="min-h-screen bg-background-blue font-darkmode-on">
+      <main className="min-h-screen font-darkmode-on">
         <Navbar />
         <div id="" className="fixed h-screen z-0">
           <video src={"./files/background.webm"} autoPlay={true} loop muted className="object-fill w-screen h-screen"></video>
