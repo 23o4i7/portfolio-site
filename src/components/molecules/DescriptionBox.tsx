@@ -19,7 +19,7 @@ export default function DescriptionBox({ description, tags, links, title, color,
           <Tag key={tag} iconName={tag} />
         )}
       </div>
-      <div className="mt-6">
+      <div className="mt-3">
         <LinkBox links={links} />
       </div>
     </div>
