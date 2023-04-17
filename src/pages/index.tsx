@@ -68,7 +68,7 @@ export default function Index() {
             <ContactBox />
           </div>
           <span className="flex justify-center text-sm text-white drop-shadow-lg pb-4 hover:opacity-50 duration-300">
-            <a href="https://wallpaperwaifu.com/">Background From WallpaperWaifu</a>
+            <a href="https://wallpaperwaifu.com/" rel="noopener noreferrer" target="_blank">Background From WallpaperWaifu</a>
           </span>
         </div>
       </main>
