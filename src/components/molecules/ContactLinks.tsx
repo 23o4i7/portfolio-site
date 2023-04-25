@@ -11,7 +11,7 @@ export default function ContactLinks({ decoration }: ContactLinksProps) {
       <a className="px-2" href="mailto: sean.ng.cip@gmail.com" rel="noopener noreferrer" target="_blank">
         <Image src="/images/email.svg" alt="Email" width={45} height={45} className="hover:opacity-75 duration-500" />
       </a>
-      <a className="px-2" href="https://discord.com/users/206980989468016641" rel="noopener noreferrer" target="_blank">
+      <a className="px-2" href="https://discord.com/users/825360741564809216" rel="noopener noreferrer" target="_blank">
         <Image src="/images/discord.svg" alt="Discord" width={45} height={45} className="hover:opacity-75 duration-500" />
       </a>
       <a className="px-2" href="https://github.com/23o4i7" rel="noopener noreferrer" target="_blank">
