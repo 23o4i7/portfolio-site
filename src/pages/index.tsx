@@ -48,10 +48,10 @@ export default function Index() {
       <main className="min-h-screen font-darkmode-on">
         <Navbar />
         <div id="" className="fixed h-screen z-0">
-          <video src={"./files/background.webm"} autoPlay={true} loop muted className="object-fill w-screen h-screen pointer-events-none"></video>
+          <video src={"./files/background.webm"} autoPlay={true} loop muted className="object-cover w-screen h-screen pointer-events-none bg-contain"></video>
         </div>
         <div className="relative z-10 w-4/5 m-auto">
-          <div className="flex flex-col justify-start pl-32 py-24 xl:py-64 h-screen drop-shadow-lg">
+          <div className="flex flex-col justify-start lg:pl-32 py-24 xl:py-64 h-screen drop-shadow-lg">
             <HeroText text={"Hi, I'm Sean Ng"} spacing="pt-16" />
             <TitleText text={"Full Stack Developer"} spacing="py-4" />
             <HomepageText text={"I'm a full stack developer based in Vancouver, Canada,"} />

@@ -11,7 +11,7 @@ type ContactBoxProps = {
 export default function ContactBox({ textDecoration }: ContactBoxProps) {
   return (
     <>
-      <div className='py-16 px-20'>
+      <div className='xl:py-16 xl:px-20'>
         <div className='flex flex-col items-center text-center'>
           <TitleText text={"Get In Touch"}/>
           <HomepageText 
