@@ -48,7 +48,7 @@ export default function Index() {
       <main className="min-h-screen font-darkmode-on">
         <Navbar />
         <div id="" className="fixed h-screen z-0">
-          <video src={"./files/background.webm"} autoPlay={true} loop muted className="object-cover w-screen h-screen pointer-events-none bg-contain"></video>
+          <video src={"./files/background.webm"} autoPlay={true} preload="auto" loop muted className="object-cover w-screen h-screen pointer-events-none bg-contain"></video>
         </div>
         <div className="relative z-10 w-4/5 m-auto">
           <div className="flex flex-col justify-start lg:pl-32 py-24 xl:py-64 h-screen drop-shadow-lg">
@@ -59,7 +59,7 @@ export default function Index() {
             <ContactLinks decoration="mt-2 -ml-2" />
           </div>
           <div id="projects" className="flex flex-col items-center justify-center pt-36 mb-8 drop-shadow-lg">
-            <TitleText text={"Projects I Worked On"} spacing="p-8" />
+            <TitleText text={"Projects I Worked On"} spacing="px-4 pb-20 lg:p-8" decoration="text-center" />
             {projects.map((project) => (
               <Artifact key={project.name} artifactName={project.name} description={project.description} tags={project.tags} links={project.links} />
               ))}          
