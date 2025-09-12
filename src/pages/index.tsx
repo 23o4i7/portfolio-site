@@ -59,7 +59,7 @@ export default function Index() {
             <ContactLinks decoration="mt-2 -ml-2" />
           </div>
           <div id="projects" className="flex flex-col items-center justify-center pt-36 mb-8 drop-shadow-lg">
-            <TitleText text={"Projects I Worked On"} spacing="px-4 pb-20 lg:p-8" decoration="text-center" />
+            <TitleText text={"My Projects"} spacing="px-4 pb-20 lg:p-8" decoration="text-center" />
             {projects.map((project) => (
               <Artifact key={project.name} artifactName={project.name} description={project.description} tags={project.tags} links={project.links} />
               ))}          
