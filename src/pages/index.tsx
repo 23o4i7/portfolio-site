@@ -12,25 +12,25 @@ export default function Index() {
   const projects = [
     {
       name: "Buddytree",
-      description: "Buddytree is a social media app I helped maintain as part of BCIT's co-op program. Buddytree helps users discover and meet new trusted individuals and friends. Users can create and join groups, see nearby users, and create hangouts for other users to attend.",
+      description: "Buddytree helps users discover and meet new trusted individuals and friends. Users can create and join groups, see nearby users, and create hangouts for other users to attend.",
       tags: ["React", "Next.js", "TypeScript", "SASS", "Flask", "Python", "PostgresQL", "Heroku"],
       links: ["", "https://www.buddytree.org/"]
     },
     {
       name: "InterviewPal",
-      description: `Voted the #1 Audience Choice Winner at the BCIT's HackTheBreak 2023, InterviewPal is a GPT-3.5 powered AI tool that helps you practice for your interviews. It asks you common behavioral, situational, and technical interview questions and provides insightful feedback about your responses.`,
+      description: `Audience Choice Winner at the BCIT's HackTheBreak 2023, InterviewPal is a GPT-3.5 powered AI tool that helps you practice for your interviews. It asks you common interview questions and provides feedback about your responses.`,
       tags: ["React", "Next.js", "Typescript", "Tailwind", "Redis", "OpenAI", "Vercel"],
       links: ["https://github.com/InterviewPal/InterviewPal", "https://interviewpal.vercel.app/"]
     },
     {
       name: "IGAQ",
-      description: "I Got A Queery, or IGAQ, is an internet forum that provides a safe, online space for members and allies of the LGBTQ+ community to ask questions, share stories, and read resources about all things LGBTQ+, built for BCIT's Interdisciplinary Projects with a team of designers and other developers.",
+      description: "I Got A Queery (IGAQ), is a safe, online space for members and allies of the LGBTQ+ community to ask questions, share stories, and read resources. Part of BCIT's Interdisciplinary Projects with the Digital Design and Development program.",
       tags: ["React", "Next.js", "JavaScript", "TypeScript", "NestJS", "Neo4j", "Vercel"],
       links: ["https://github.com/IGAQ/NextApp", "https://www.igaq.gay/"]
     },
     {
       name: "WordGotchu",
-      description: "WordGotchu is a real time, player vs player multiplayer game based on the popular word game Wordle. Players can catch and battle each other with Gotchus, pixel-styled characters who each have their own unique abilities.",
+      description: "WordGotchu is a real time, PvP game based on the popular word game Wordle. Players catch and battle each other with Gotchus, pixel-styled characters that have unique abilities.",
       tags: ["JavaScript", "HTML", "CSS", "Express.js","Firebase", "Heroku", "Railway"],
       links: ["https://github.com/iantelli/word-gotchu", "https://word-gotchu.up.railway.app/"]
     },
@@ -52,10 +52,10 @@ export default function Index() {
         </div>
         <div className="relative z-10 w-4/5 m-auto">
           <div className="flex flex-col justify-start lg:pl-32 py-24 xl:py-64 h-screen drop-shadow-lg">
-            <HeroText text={"Hi, I'm Sean Ng"} spacing="pt-16" />
+            <HeroText text={"Hi, I'm Sean"} spacing="pt-16" />
             <TitleText text={"Full Stack Developer"} spacing="py-4" />
-            <HomepageText text={"I'm a full stack developer based in Vancouver, Canada,"} />
-            <HomepageText text={"specializing in building intuitive and robust web applications."} />
+            <HomepageText text={"I'm a developer based in Vancouver, Canada"} />
+            <HomepageText text={"specializing in building web applications."} />
             <ContactLinks decoration="mt-2 -ml-2" />
           </div>
           <div id="projects" className="flex flex-col items-center justify-center pt-36 mb-8 drop-shadow-lg">
