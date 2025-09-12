@@ -15,7 +15,7 @@ export default function ContactBox({ textDecoration }: ContactBoxProps) {
         <div className='flex flex-col items-center text-center'>
           <TitleText text={"Get In Touch"}/>
           <HomepageText 
-            text={"I'm always interested in new opportunities and projects. If you have anything you'd like to discuss or just want to say hi, don't hesitate to send me a message anytime."} 
+            text={"I'm always interested in new opportunities and projects. If there's anything you'd like to discuss or just want to say hi, please don't hesitate to reach out."} 
             spacing='pt-20 pb-8' 
           />
           <ContactLinks />
